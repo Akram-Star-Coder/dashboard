@@ -25,14 +25,23 @@ import {
   Savings,
   HomeRepairService
 } from '@mui/icons-material';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Area } from 'recharts';
+
 const data = [
-  { name: 'January', value: 10 },
-  { name: 'February', value: 20 },
-  { name: 'March', value: 30 },
-  { name: 'April', value: 40 },
-  { name: 'May', value: 50 },
+  { name: 'September', value: 4 },
+  { name: 'October', value: 6 },
+  { name: 'November', value: 5 },
+  { name: 'December', value: 3 },
+  { name: 'January', value:  7},
+  { name: 'February', value: 8 },
+  { name: 'March', value:  7},
+  { name: 'April', value:  11},
+  { name: 'May', value:  11},
+  { name: 'June', value:  1},
+  { name: 'July', value:  12},
+  { name: 'August', value: 15.6 },
 ];
+
 
 
 
@@ -187,16 +196,322 @@ const DashBoard = () => {
           </div>
           <div className="iojlzfqd">
 
-            <LineChart width={666} height={300} data={data}>
+            <LineChart width={666} height={280} data={data}>
               <XAxis dataKey="name" />
               <YAxis />
               <CartesianGrid stroke="#eee" />
               <Tooltip />
               <Legend />
-              <Line type="monotone" dataKey="value" stroke="#8884d8" />
+              <div className="chart-mask"></div>
+              <Line strokeWidth={2.9} type="monotone" dataKey="value" stroke="#ffee00" />
             </LineChart>
 
           </div>
+        </div>
+
+
+
+        <div className="rowFInal">
+          
+          
+          <div className="uhqdk">
+            <div className="uuzfkd">
+              User Name
+            </div>
+            <div className="uuzfkd">
+              User Id
+            </div>
+            <div className="uuzfkd">
+              Integration
+            </div>
+            <div className="uuzfkd noborderright">
+              User Last Transaction
+            </div>           
+          </div>
+
+
+          <div className="uhqdk">
+            <div className="uuzfkd">
+              Akram Elbasri
+            </div>
+            <div className="uuzfkd">
+              Zack Jackson
+            </div>
+            <div className="uuzfkd">
+              Ofa Jackeline
+            </div>
+            <div className="uuzfkd noborderright">
+              Moro Cice
+            </div>           
+          </div>
+
+
+
+
+
+          <div className="uhqdk">
+            <div className="uuzfkd">
+             832JHK782783562356
+            </div>
+            <div className="uuzfkd">
+              87637R6ERA9ER
+            </div>
+            <div className="uuzfkd">
+              9AE857689356239524389
+            </div>
+            <div className="uuzfkd noborderright">
+               9276293R9639RE6A3
+            </div>           
+          </div>
+          <div className="uhqdk">
+            <div className="uuzfkd">
+             832JHK782783562356
+            </div>
+            <div className="uuzfkd">
+              87637R6ERA9ER
+            </div>
+            <div className="uuzfkd">
+              9AE857689356239524389
+            </div>
+            <div className="uuzfkd noborderright">
+               9276293R9639RE6A3
+            </div>           
+          </div>
+          <div className="uhqdk">
+            <div className="uuzfkd">
+             832JHK782783562356
+            </div>
+            <div className="uuzfkd">
+              87637R6ERA9ER
+            </div>
+            <div className="uuzfkd">
+              9AE857689356239524389
+            </div>
+            <div className="uuzfkd noborderright">
+               9276293R9639RE6A3
+            </div>           
+          </div>
+          <div className="uhqdk">
+            <div className="uuzfkd">
+             832JHK782783562356
+            </div>
+            <div className="uuzfkd">
+              87637R6ERA9ER
+            </div>
+            <div className="uuzfkd">
+              9AE857689356239524389
+            </div>
+            <div className="uuzfkd noborderright">
+               9276293R9639RE6A3
+            </div>           
+          </div>
+
+
+
+
+          <div className="uhqdk">
+            <div className="uuzfkd">
+              iNTEGRATION 87364A
+            </div>
+            <div className="uuzfkd">
+            iNTEGRATION 7823GUZ
+            </div>
+            <div className="uuzfkd">
+            iNTEGRATION 7823DSQ87T
+            </div>
+            <div className="uuzfkd noborderright">
+            iNTEGRATION 5DAS
+            </div>           
+          </div>
+          <div className="uhqdk">
+            <div className="uuzfkd">
+              Akram Elbasri
+            </div>
+            <div className="uuzfkd">
+              Zack Jackson
+            </div>
+            <div className="uuzfkd">
+              Ofa Jackeline
+            </div>
+            <div className="uuzfkd noborderright">
+              Moro Cice
+            </div>           
+          </div>
+
+
+
+
+
+          <div className="uhqdk">
+            <div className="uuzfkd">
+             832JHK782783562356
+            </div>
+            <div className="uuzfkd">
+              87637R6ERA9ER
+            </div>
+            <div className="uuzfkd">
+              9AE857689356239524389
+            </div>
+            <div className="uuzfkd noborderright">
+               9276293R9639RE6A3
+            </div>           
+          </div>
+          <div className="uhqdk">
+            <div className="uuzfkd">
+             832JHK782783562356
+            </div>
+            <div className="uuzfkd">
+              87637R6ERA9ER
+            </div>
+            <div className="uuzfkd">
+              9AE857689356239524389
+            </div>
+            <div className="uuzfkd noborderright">
+               9276293R9639RE6A3
+            </div>           
+          </div>
+          <div className="uhqdk">
+            <div className="uuzfkd">
+             832JHK782783562356
+            </div>
+            <div className="uuzfkd">
+              87637R6ERA9ER
+            </div>
+            <div className="uuzfkd">
+              9AE857689356239524389
+            </div>
+            <div className="uuzfkd noborderright">
+               9276293R9639RE6A3
+            </div>           
+          </div>
+          <div className="uhqdk">
+            <div className="uuzfkd">
+             832JHK782783562356
+            </div>
+            <div className="uuzfkd">
+              87637R6ERA9ER
+            </div>
+            <div className="uuzfkd">
+              9AE857689356239524389
+            </div>
+            <div className="uuzfkd noborderright">
+               9276293R9639RE6A3
+            </div>           
+          </div>
+
+
+
+
+          <div className="uhqdk">
+            <div className="uuzfkd">
+              iNTEGRATION 87364A
+            </div>
+            <div className="uuzfkd">
+            iNTEGRATION 7823GUZ
+            </div>
+            <div className="uuzfkd">
+            iNTEGRATION 7823DSQ87T
+            </div>
+            <div className="uuzfkd noborderright">
+            iNTEGRATION 5DAS
+            </div>           
+          </div>
+
+          <div className="uhqdk">
+            <div className="uuzfkd">
+              Akram Elbasri
+            </div>
+            <div className="uuzfkd">
+              Zack Jackson
+            </div>
+            <div className="uuzfkd">
+              Ofa Jackeline
+            </div>
+            <div className="uuzfkd noborderright">
+              Moro Cice
+            </div>           
+          </div>
+
+
+
+
+
+          <div className="uhqdk">
+            <div className="uuzfkd">
+             832JHK782783562356
+            </div>
+            <div className="uuzfkd">
+              87637R6ERA9ER
+            </div>
+            <div className="uuzfkd">
+              9AE857689356239524389
+            </div>
+            <div className="uuzfkd noborderright">
+               9276293R9639RE6A3
+            </div>           
+          </div>
+          <div className="uhqdk">
+            <div className="uuzfkd">
+             832JHK782783562356
+            </div>
+            <div className="uuzfkd">
+              87637R6ERA9ER
+            </div>
+            <div className="uuzfkd">
+              9AE857689356239524389
+            </div>
+            <div className="uuzfkd noborderright">
+               9276293R9639RE6A3
+            </div>           
+          </div>
+          <div className="uhqdk">
+            <div className="uuzfkd">
+             832JHK782783562356
+            </div>
+            <div className="uuzfkd">
+              87637R6ERA9ER
+            </div>
+            <div className="uuzfkd">
+              9AE857689356239524389
+            </div>
+            <div className="uuzfkd noborderright">
+               9276293R9639RE6A3
+            </div>           
+          </div>
+          <div className="uhqdk">
+            <div className="uuzfkd">
+             832JHK782783562356
+            </div>
+            <div className="uuzfkd">
+              87637R6ERA9ER
+            </div>
+            <div className="uuzfkd">
+              9AE857689356239524389
+            </div>
+            <div className="uuzfkd noborderright">
+               9276293R9639RE6A3
+            </div>           
+          </div>
+
+
+
+
+          <div className="uhqdk">
+            <div className="uuzfkd">
+              iNTEGRATION 87364A
+            </div>
+            <div className="uuzfkd">
+            iNTEGRATION 7823GUZ
+            </div>
+            <div className="uuzfkd">
+            iNTEGRATION 7823DSQ87T
+            </div>
+            <div className="uuzfkd noborderright">
+            iNTEGRATION 5DAS
+            </div>           
+          </div>
+
+
         </div>
 
 
