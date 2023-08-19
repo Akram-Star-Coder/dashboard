@@ -1,0 +1,108 @@
+.DashBoard{
+    height: 100vh;
+    width: 100%;
+}
+
+.SideBar{
+    height: 100vh;
+    width: 185px;
+    background-color: #1d266e;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+.DashboardCenter{
+    position: fixed;
+    height: calc(100vh - 60px);
+    background-color: #191F45;
+    width: calc(100% - 185px);
+    bottom: 0 ;
+    right: 0;
+}
+.row1SideBar{
+    height: 53px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 2.2rem;
+    color: #fcea87;
+    font-size: 1.2rem;
+    cursor: default;
+    pointer-events: none;
+    font-weight: 600;
+    margin-bottom: 0rem;
+}
+.row2SideBar{
+    cursor: default;
+    pointer-events: none;
+    background-color: #fcea87;
+    height: 38px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2.2rem;
+    padding-right: 0.5rem;
+}
+
+.row2SideBar .MuiIu{
+    color: #1d266e;
+}
+.row2SideBar span{
+    font-size: 0.87rem;
+    font-weight: 600;
+    color: #1d266e;
+}
+.row2SideBar .MuiIu2{
+    color: #1d266e;
+    font-size: 15.666px;    
+}
+
+.row3SideBar{
+    height: 35px;
+    cursor: default;
+    pointer-events: none;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: #fcea87;
+    font-size: 14.23px;
+    font-weight: 500;
+    padding-left: 2.2rem;
+    margin-bottom: 0.3rem;
+}
+.row4NormalJJ{
+    width: 100%;
+    padding-left: 3.05rem;
+    padding-right: 2rem;
+    color: #ebebeb;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    height: 29px;
+    margin-top: 0.5rem;
+    align-items: center;
+    justify-content: left;
+    transition: 0.23s all ease-in-out;
+}
+.row4NormalJJ:hover{
+    background-color: #fcea87;
+    color: #1d266e;
+}
+.row4NormalJJ:active{
+    background-color: #c0a71a;
+}
+.row4NormalJJ:hover .cdjn{
+    color: #1d266e;
+}
+
+.row4NormalJJ .cdjn{
+    margin-right: 1.3rem;
+    transition: 0.23s all ease-in-out;
+}
+.DashBoard{
+    background-color: #191F45;
+}

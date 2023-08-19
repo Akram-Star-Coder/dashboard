@@ -1,0 +1,98 @@
+.Navbar{
+    width: calc(100% - 185px);
+    background-color:#191F45;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    right: 0;
+    padding: 0 1rem;
+}
+.leftSideNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    position: relative;
+}
+.leftSideNav input{
+    height: 36px;
+    background-color: #1d266e;
+    width: 100%;
+    border-radius: 0.4rem;
+    padding: 0 10px;
+    font-size: 0.8rem;
+    outline: none;
+    color: #ebebeb;
+    border: none;
+}
+.leftSideNav input::placeholder{
+    color: #ebebeb;
+}
+.leftSideNav button{
+    position: absolute;
+    right:6.7px;
+    top: 4px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #ebebeb;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    transition: 0.24s all ease-in-out;
+    width: 25px;
+    border-radius: 50%;
+}
+.leftSideNav button:hover{
+    background-color: #ebebeb;
+    color: #1d266e;
+}
+.SearchMUI{
+    color: #ebebeb;
+    transition: 0.24s all ease-in-out;
+}
+.leftSideNav button:hover .SearchMUI{
+    color: #222e82;
+}
+
+.rightSideNav{
+    width: 250px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rightSideNav button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.MUI{
+    color: #ebebeb;
+}
+.BigBtnContainer{
+    width: 144px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.BigBtnContainer img{
+    height: 33px;
+    width: 33px;
+    border: none;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    border: 1.5px solid #ebebeb;
+}
+.BigBtnContainer .MUI{
+    color: #ebebeb;
+}
+.BigBtnContainer span{
+    color: #ebebeb;
+    margin: 0 0.5rem;
+}

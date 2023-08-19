@@ -9,6 +9,7 @@ const clientRoutes = require('./Routes/clientRoutes');
 const generalRoutes = require('./Routes/generalRoutes');
 const managementRoutes = require('./Routes/managementRoutes');
 const salesRoutes = require('./Routes/salesRoutes');
+const connect = require('./Database/connect');
 
 
 const app = express();
@@ -26,6 +27,7 @@ app.use(bodyParser.urlencoded({extended : false}));
 app.listen(process.env.PORT, ()=>{
     //calback function when success
     console.log('Connected to Server');
+    connect();
 });
 
 
