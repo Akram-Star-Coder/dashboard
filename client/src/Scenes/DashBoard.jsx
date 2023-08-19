@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './DashBoard.css';
 import Navbar from '../Components/Navbar';
-import { Line } from 'react-chartjs-2';
-import { CategoryScale, Chart } from "chart.js";
-
 import {
   LightModeOutlined, 
   DarkModeOutlined, 
@@ -28,50 +25,20 @@ import {
   Savings,
   HomeRepairService
 } from '@mui/icons-material';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+const data = [
+  { name: 'January', value: 10 },
+  { name: 'February', value: 20 },
+  { name: 'March', value: 30 },
+  { name: 'April', value: 40 },
+  { name: 'May', value: 50 },
+];
 
-const DashBoard = () => {
-  Chart.register(CategoryScale);
-  const [chartInstance, setChartInstance] = useState(null);
-  const data = {
-    labels: ['January', 'February', 'March', 'April', 'May'],
-    datasets: [
-      {
-        label: 'Ascending Data',
-        data: [10, 20, 30, 40, 50], // Replace with your ascending data
-        fill: false,
-        borderColor: 'rgba(75,192,192,1)',
-      },
-    ],
-  };
-
-  const options = {
-    responsive: true,
-    maintainAspectRatio: false,
-  };
-
-  useEffect(() => {
-    if (chartInstance) {
-      chartInstance.destroy();
-    }
-
-    // Use 'x' as the type for X-axis scale if you are using CategoryScale
-    const newChartInstance = new Chart(document.getElementById('myChart'), {
-      type: 'x', // Use 'x' for CategoryScale
-      data: data,
-      options: options,
-    });
-
-    setChartInstance(newChartInstance);
-
-    return () => {
-      if (chartInstance) {
-        chartInstance.destroy();
-      }
-    };
-  }, [data]);
 
 
 
+const DashBoard = () => {
+ 
   return (
     <div className='DashBoard'>
       <div className="SideBar">
@@ -219,7 +186,16 @@ const DashBoard = () => {
             </div>
           </div>
           <div className="iojlzfqd">
-            <Line data={data} options={options} />
+
+            <LineChart width={666} height={300} data={data}>
+              <XAxis dataKey="name" />
+              <YAxis />
+              <CartesianGrid stroke="#eee" />
+              <Tooltip />
+              <Legend />
+              <Line type="monotone" dataKey="value" stroke="#8884d8" />
+            </LineChart>
+
           </div>
         </div>
 
