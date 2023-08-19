@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './DashBoard.css';
 import Navbar from '../Components/Navbar';
+import { Line } from 'react-chartjs-2';
+import { Chart } from 'chart.js';
+
 import {
   LightModeOutlined, 
   DarkModeOutlined, 
@@ -20,10 +23,56 @@ import {
   RemoveRedEye,
   PrivacyTip,
   FileDownload,
-  Person
+  Person,
+  ShoppingBasket,
+  Savings,
+  HomeRepairService
 } from '@mui/icons-material';
 
 const DashBoard = () => {
+
+
+  const [chartInstance, setChartInstance] = useState(null);
+  const data = {
+    labels: ['January', 'February', 'March', 'April', 'May'],
+    datasets: [
+      {
+        label: 'Ascending Data',
+        data: [10, 20, 30, 40, 50], // Replace with your ascending data
+        fill: false,
+        borderColor: 'rgba(75,192,192,1)',
+      },
+    ],
+  };
+
+  const options = {
+    responsive: true,
+    maintainAspectRatio: false,
+  };
+
+
+  useEffect(() => {
+    if (chartInstance) {
+      chartInstance.destroy();
+    }
+
+    const newChartInstance = new Chart(document.getElementById('myChart'), {
+      type: 'line',
+      data: data,
+      options: options,
+    });
+
+    setChartInstance(newChartInstance);
+
+    return () => {
+      if (chartInstance) {
+        chartInstance.destroy();
+      }
+    };
+  }, [data]);
+
+
+
   return (
     <div className='DashBoard'>
       <div className="SideBar">
@@ -100,10 +149,13 @@ const DashBoard = () => {
         <div className="row2Dash76">
           <div className="rowGYUZ">
             <div className="eod">
+              
+              
+              
               <div className="kzqd">
                 <div className="yid">
                   <span>Total Customers</span>
-                  <Person/>
+                  <Person className='IHK'/>
                 </div>
                 <div className="yyd">
                   5269
@@ -113,21 +165,62 @@ const DashBoard = () => {
                   <span>Since last month</span>
                 </div>
               </div>
+
+
               <div className="kzqd">
-                
+                <div className="yid">
+                  <span>Daily Sales</span>
+                  <ShoppingBasket className='IHK'/>
+                </div>
+                <div className="yyd">
+                  8815
+                </div>
+                <div className="yyy">
+                  <span><em>+37%</em></span>
+                  <span>Since last day</span>
+                </div>
               </div>
+
+
             </div>
             <div className="eod">
+              
+              
               <div className="kzqd">
+                <div className="yid">
+                  <span>Monthly Sales</span>
+                  <Savings className='IHK'/>
+                </div>
+                <div className="yyd">
+                  11502
+                </div>
+                <div className="yyy">
+                  <span><em>+79%</em></span>
+                  <span>Since last month</span>
+                </div>
+              </div>
 
-              </div>
+
               <div className="kzqd">
-                
+                <div className="yid">
+                  <span>Yearly Sales</span>
+                  <HomeRepairService className='IHK'/>
+                </div>
+                <div className="yyd">
+                  71309
+                </div>
+                <div className="yyy">
+                  <span><em>+9%</em></span>
+                  <span>Since last year</span>
+                </div>
               </div>
+
+
+
             </div>
           </div>
           <div className="iojlzfqd">
-            
+            <Line data={data} options={options} />
           </div>
         </div>
 

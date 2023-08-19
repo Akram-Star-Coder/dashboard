@@ -204,7 +204,6 @@
 .yid{
     height: 33.33333%;
     width: 100%;
-    background-color:lime;
     display: flex;
     justify-content: space-between;
     align-items:start;
@@ -212,10 +211,12 @@
     font-size: 13px;
     font-weight: 500;
 }
+.yid span:first-child{
+    padding-top: 0.25rem;
+}
 .yyd{
     height: 33.33333%;
     width: 100%;
-    background-color: gray;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -226,11 +227,13 @@
 .yyy{
     height: 33.33333%;
     width: 100%;
-    background-color: red;
     color: #ebebeb;
     display: flex;
     justify-content: space-between;
     align-items: end;
     font-size: 13px;
     font-weight: 500;
+}
+.IHK{
+    color:#fcea87;
 }
