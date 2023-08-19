@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './DashBoard.css';
 import Navbar from '../Components/Navbar';
 import { Line } from 'react-chartjs-2';
-import { Chart } from 'chart.js';
+import { CategoryScale, Chart } from "chart.js";
 
 import {
   LightModeOutlined, 
@@ -30,8 +30,7 @@ import {
 } from '@mui/icons-material';
 
 const DashBoard = () => {
-
-
+  Chart.register(CategoryScale);
   const [chartInstance, setChartInstance] = useState(null);
   const data = {
     labels: ['January', 'February', 'March', 'April', 'May'],
@@ -50,14 +49,14 @@ const DashBoard = () => {
     maintainAspectRatio: false,
   };
 
-
   useEffect(() => {
     if (chartInstance) {
       chartInstance.destroy();
     }
 
+    // Use 'x' as the type for X-axis scale if you are using CategoryScale
     const newChartInstance = new Chart(document.getElementById('myChart'), {
-      type: 'line',
+      type: 'x', // Use 'x' for CategoryScale
       data: data,
       options: options,
     });
