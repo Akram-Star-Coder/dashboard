@@ -106,3 +106,131 @@
 .DashBoard{
     background-color: #191F45;
 }
+.DashboardCenter{
+    display: flex;
+    flex-direction: column;
+}
+.row1dash{
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row1dash77{
+    height: 100%;
+    width: 200px;
+    display: flex;flex-direction: column;
+
+}
+.row1dash777{
+    height: 100%;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+}
+.row1dash777 button{
+    width: 177px;
+    height: 38.9px;
+    border-radius: 0.4rem;
+    color: #1d266e;
+    background-color: #fcea87;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    outline: none;
+    border: none;
+}
+.ziodq{
+    height: 53.44%;
+    display: flex;
+    align-items: center;
+    color: #ebebeb;
+    font-weight: 700;
+    font-size: 1.5rem;
+    align-items: end;
+    margin-bottom: 0.3rem;
+}
+.zioeqdjs{
+    height: 20%;
+    font-size: 0.9rem;
+    color: #ebebeb;
+    display: flex;
+    align-items: center;
+}   
+
+.row2Dash76{
+    height: 300px;
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.rowGYUZ{
+    height: 100%;
+    width:calc(36% - 0.5rem);
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.iojlzfqd{
+    background-color: #1d266e;
+    height: 100%;
+    width: calc(64% - 0.5rem);
+    border-radius: 0.4rem;
+}
+.eod{
+    width: 100%;
+    height: calc(50% - 0.5rem);
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.kzqd{
+    height: 100%;
+    width: calc(50% - 0.5rem);
+    background-color: #1d266e;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.yid{
+    height: 33.33333%;
+    width: 100%;
+    background-color:lime;
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+    color: #ebebeb;
+    font-size: 13px;
+    font-weight: 500;
+}
+.yyd{
+    height: 33.33333%;
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #fcea87;
+}
+.yyy{
+    height: 33.33333%;
+    width: 100%;
+    background-color: red;
+    color: #ebebeb;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    font-size: 13px;
+    font-weight: 500;
+}

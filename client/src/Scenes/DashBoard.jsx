@@ -18,7 +18,9 @@ import {
   InsertInvitation,
   CalendarMonth,
   RemoveRedEye,
-  PrivacyTip
+  PrivacyTip,
+  FileDownload,
+  Person
 } from '@mui/icons-material';
 
 const DashBoard = () => {
@@ -81,7 +83,55 @@ const DashBoard = () => {
       </div>
       <Navbar />
       <div className="DashboardCenter">
-        
+        <div className="row1dash">
+          <div className="row1dash77">
+            <div className="ziodq">
+              DASHBOARD
+            </div>
+            <div className="zioeqdjs">
+              Welcome to your dashboard!
+            </div>
+          </div>
+          <div className="row1dash777">
+            <button><FileDownload /> Download Reports</button>
+          </div>
+        </div>
+
+        <div className="row2Dash76">
+          <div className="rowGYUZ">
+            <div className="eod">
+              <div className="kzqd">
+                <div className="yid">
+                  <span>Total Customers</span>
+                  <Person/>
+                </div>
+                <div className="yyd">
+                  5269
+                </div>
+                <div className="yyy">
+                  <span><em>+14%</em></span>
+                  <span>Since last month</span>
+                </div>
+              </div>
+              <div className="kzqd">
+                
+              </div>
+            </div>
+            <div className="eod">
+              <div className="kzqd">
+
+              </div>
+              <div className="kzqd">
+                
+              </div>
+            </div>
+          </div>
+          <div className="iojlzfqd">
+            
+          </div>
+        </div>
+
+
       </div>
     </div>
   )
